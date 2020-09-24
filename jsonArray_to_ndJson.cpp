@@ -14,6 +14,12 @@ void doSome(string &a){
     int button = 0;
     ll i = 0;
     for(auto x : a){
+
+        if(i == 0 ){
+            ++i;
+            continue;
+        }
+
         if(s.empty() and (x == ',' or x == ' ')){
             continue;
         }

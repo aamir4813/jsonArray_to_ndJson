@@ -1,7 +1,3 @@
-/*
-	Convert your json object to ndJson to load in Elastic Search Cluster or Kibana
-*/
-
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
@@ -14,12 +10,10 @@ void doSome(string &a){
     int button = 0;
     ll i = 0;
     for(auto x : a){
-
-        if(i == 0 ){
+        if(i == 0 or i == a.size()-1){
             ++i;
             continue;
         }
-
         if(s.empty() and (x == ',' or x == ' ')){
             continue;
         }
